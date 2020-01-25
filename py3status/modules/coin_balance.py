@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Display balances of diverse crypto-currencies.
 
@@ -153,7 +152,7 @@ class Py3status:
                     fields = line.split("=", 1)
                     if len(fields) == 2 and fields[0].strip() == key:
                         return fields[1].strip()
-        except IOError as err:
+        except OSError as err:
             if err.errno == ENOENT:
                 return
             raise

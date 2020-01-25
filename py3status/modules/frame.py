@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Group modules and treat them as a single one.
 
@@ -82,8 +81,8 @@ class Py3status:
     # available configuration parameters
     button_toggle = 1
     format = "{output}"
-    format_button_closed = u"+"
-    format_button_open = u"-"
+    format_button_closed = "+"
+    format_button_open = "-"
     format_separator = None
     open = True
 
